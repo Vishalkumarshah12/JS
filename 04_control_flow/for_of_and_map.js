@@ -29,7 +29,7 @@ for (const [key, values] of map) {
 }
 
 
-// for of is not work in Objects 
+// for of loop is not work in Objects 
 
 // const myObject = {
 //     'game1':'NFS',
