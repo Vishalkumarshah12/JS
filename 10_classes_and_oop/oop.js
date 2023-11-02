@@ -18,26 +18,21 @@ const user = {
 
 
 // constructor function
-// function User(username, loginCount, isLoggedIn){
-//     this.username = username;
-//     this.loginCount = loginCount;
-//     this.isLoggedIn = isLoggedIn
+function User(username, loginCount, isLoggedIn){
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isLoggedIn = isLoggedIn
 
-//     this.greeting = function(){
-//         console.log(`Welcome to ${this.username}`);
-//     }
+    this.greeting = function(){
+        console.log(`Welcome to ${this.username}`);
+    }
 
-//     return this
-// }
-
-// const userOne = new User("Vishal", 12, true)
-// const userTwo = new User("Shivam", 11, false)
-
-// console.log(userOne.constructor);
-// console.log(userTwo);
-
-function test1(){
-     console.log(this);
+    return this
 }
 
-test1()
+const userOne = new User("Vishal", 12, true)
+const userTwo = new User("Shivam", 11, false)
+
+console.log(userOne.constructor);
+console.log(userTwo);
+
